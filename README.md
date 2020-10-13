@@ -20,4 +20,4 @@ To see HELP for the training script:
     python eval.py --model pilotnet_io_lstm --batch_size 16 --gpu 1 --model_path logs_pilot/pilotnet_io_lstm/model_best.ckpt --result_dir result --loss_function mae
 
 ### Prediction
-    python predict.py
+    python predict.py --model pilotnet_io_lstm --model_path logs_pilot/pilotnet_io_lstm/model_best.ckpt --result_dir result_predict --loss_function mae --add_orientations False
